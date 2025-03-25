@@ -29,12 +29,6 @@ a {
 
 
 
-
-
-/* ==========            ========== */
-/* ========== INFO INDEX ========== */
-/* ==========            ========== */
-
 .body-info {
     line-height: 1.6;
     font-weight: 500;
@@ -46,9 +40,22 @@ a {
     padding: 0 20px;
 }
 
+.header-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 100px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 .header-info {
     background-color: #2c3e50;
-    color: #fff;
+    color: #ee6027;
     text-align: center;
     padding: 1rem;
 }
@@ -66,6 +73,7 @@ a {
 }
 
 h1 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -75,53 +83,52 @@ p {
 
 .social-title-info {
     text-align: center;
-    text-decoration: underline;
     font-size: 1.2rem;
 }
 
-.social-buttons-info {
+/* redes sociales */
+.redes-sociales {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
-.social-button-info {
+.redes-sociales a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 60px;
-    font-size: 1.15rem;
-    color: #f9f9f9;
-    background-color: #3498db;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #ee6027;
+    padding: 10px 8px;
+    border-radius: 10px;
+    transition: .3s;
+    color: black;
 }
 
-.social-button-info i {
-    margin-right: 10px;
+.redes-sociales a:hover {
+    transform: scale(1.08);
 }
 
-.social-button-info:hover {
-    background-color: #2980b9;
+.redes-sociales .social-icon {
+    width: 40px;
 }
 
-.instagram { background-color: #e4405f; }
-.instagram:hover { background-color: #c43548; }
+/* Footer */
+footer {
+    padding: 2rem 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.whatsapp { background-color: #25d366; }
-.whatsapp:hover { background-color: #1fad53; }
-
-.galeria { background-color: #7E60BF;}
-.galeria:hover { background-color: #6c52a3;}
-
-.web { background-color: #8b612f;}
-.web:hover { background-color: #6d4d26;}
+.footer-copy p {
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 
 @media (max-width: 768px) {
@@ -137,8 +144,11 @@ p {
         font-size: 1.2rem;
     }
 
-    .social-button-info {
-        width: 100%;
-        font-size: 1.2rem;
+    .redes-sociales {
+        display: flex;
+        flex-direction: column;
     }
+
+
+
 }
