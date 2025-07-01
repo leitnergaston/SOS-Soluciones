@@ -1,0 +1,167 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #cdd0d1;
+    color: #222;
+}
+
+.header-info {
+    background: linear-gradient(90deg, #2c3e50 60%, #ee6027 100%);
+    color: #fff;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #e0e0e0;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    padding: 2rem 1.2rem 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 119, 200, 0.18);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #0077c8;
+    margin-bottom: 1rem;
+}
+
+.service-card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: #ff7300;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.whatsapp-btn {
+    background: #27ac58;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.08);
+}
+
+.whatsapp-btn:hover {
+    background: #128c7e;
+}
+
+.social-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.social-icon:hover i.fa-instagram {
+    color: #E1306C;
+}
+
+.social-icon:hover i.fa-whatsapp {
+    color: #25D366;
+}
+
+.copy {
+    text-align: center;
+    color: white;
+}
+
+.copy p a {
+    color: #7591A6;
+    text-decoration: none;
+}
+
+.copy p a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+}
